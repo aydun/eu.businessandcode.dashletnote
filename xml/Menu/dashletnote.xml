@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/dashlet-note</path>
+    <page_callback>CRM_Dashletnote_Page_DashletNote</page_callback>
+    <title>DashletNote</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/dashlet-note/admin</path>
+    <page_callback>CRM_Dashletnote_Form_DashletNoteAdmin</page_callback>
+    <title>DashletNoteAdmin</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
