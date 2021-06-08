@@ -8,5 +8,6 @@
       </tbody>
     </table>
   </div>
+  <p><a href="{$adminLink}">{$adminLinkText}</a></p>
 </div>
 
