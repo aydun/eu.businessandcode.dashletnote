@@ -32,6 +32,10 @@ By clicking on "Configure your Dashboard" on the CiviCRM start page, users can d
 
 ![Screenshot](images/screenshot5.png)
 
+## Troubleshooting
+
+If you get the error "Page not found" when trying to access the Note Editor, make sure to clear the CiviCRM cache and CMS cache.
+
 ## License
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
