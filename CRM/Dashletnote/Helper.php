@@ -97,7 +97,9 @@ class CRM_Dashletnote_Helper {
   }
 
   private function getNoteId() {
-    $sql = "select id from civicrm_note where entity_table = 'civicrm_dashboard' order by id";
+    // Technically, multiple notes with entity civicrm_dashboard are possible.
+    // We only want 1, so we return the first id (or NULL if there is no note yet)
+    $sql = "select min(id) from civicrm_note where entity_table = 'civicrm_dashboard'";
     $id = CRM_Core_DAO::singleValueQuery($sql);
     return $id;
   }
@@ -119,7 +121,7 @@ class CRM_Dashletnote_Helper {
       $params['permission'] = 'access CiviCRM';
       $params['fullscreen_url'] = 'civicrm/dashlet-note?reset=1&context=dashletFullscreen';
       $params['is_active'] = '1';
-      $params['is_reserved'] = '1';
+      $params['is_reserved'] = '1'; // prevents user from deleting it
       $params['cache_minutes'] = '7200';
 
       $result = civicrm_api3('Dashboard', 'create', $params);

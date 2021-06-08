@@ -22,7 +22,7 @@ class CRM_Dashletnote_Page_DashletNote extends CRM_Core_Page {
   }
 
   private function setAdminLink() {
-    if (CRM_Core_Permission::check('administer CiviCRM')) {
+    if ($this->hasNoteEditPermission()) {
       $link = CRM_Utils_System::url('civicrm/dashlet-note/admin', 'reset=1');
       $linkText = E::ts('Edit');
     }
@@ -33,6 +33,10 @@ class CRM_Dashletnote_Page_DashletNote extends CRM_Core_Page {
 
     $this->assign('adminLink', $link);
     $this->assign('adminLinkText', $linkText);
+  }
+
+  private function hasNoteEditPermission() {
+    return CRM_Core_Permission::check('administer CiviCRM');
   }
 
 }
