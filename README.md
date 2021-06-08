@@ -1,44 +1,37 @@
-# eu.businessandcode.dashletnote
+# Dashlet Note
 
-![Screenshot](/images/screenshot.png)
+## A Message to your Users on the Dashboard
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+![Screenshot](images/screenshot.png)
+
+***Dashlet Note*** lets you create a note in a rich text editor, and make this note available as a dashlet (i.e. a dashboard item).
+
+This is an easy solution to show some static information on the dashboard, like:
+* important phone numbers
+* announcements
+* shortcuts to certain pages
+* ...
+
+## Menu
+
+You can create/edit your dashlet note via Administer > Dashlet Note
+
+![Screenshot](images/screenshot3.png)
+
+## Create the Note in the Note Editor
+
+The note editor allows rich text like bullets, hyperlinks, bold text, images...
+
+![Screenshot](images/screenshot2.png)
+
+## Display the Note on the Dashboard
+
+By clicking on "Configure your Dashboard" on the CiviCRM start page, users can drag and drop the dashboard note in the left or right column.
+
+![Screenshot](images/screenshot4.png)
+
+![Screenshot](images/screenshot5.png)
+
+## License
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
-
-## Requirements
-
-* PHP v7.2+
-* CiviCRM (*FIXME: Version number*)
-
-## Installation (Web UI)
-
-Learn more about installing CiviCRM extensions in the [CiviCRM Sysadmin Guide](https://docs.civicrm.org/sysadmin/en/latest/customize/extensions/).
-
-## Installation (CLI, Zip)
-
-Sysadmins and developers may download the `.zip` file for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-cd <extension-dir>
-cv dl eu.businessandcode.dashletnote@https://github.com/FIXME/eu.businessandcode.dashletnote/archive/master.zip
-```
-
-## Installation (CLI, Git)
-
-Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) repo for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-git clone https://github.com/FIXME/eu.businessandcode.dashletnote.git
-cv en dashletnote
-```
-
-## Getting Started
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
